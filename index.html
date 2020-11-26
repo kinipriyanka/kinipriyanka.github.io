@@ -1,7 +1,87 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<head>
+	<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Priyanka's Portfolio</title>
+		<link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+		<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+        <!-- <link rel="stylesheet" href="styles/debug.css"> -->
+		<link rel="stylesheet" href="styles/helper.css">
+		<!-- <link rel="stylesheet" href="styles/grid.css"> -->
+		<style>
+	/* background */		
+	.hero {
+		background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url(images/hero-1.jpg) center center/ cover;
+		z-index: 1;
+	}
+
+	@media (max-width: 1024px) { 
+		.hero { 
+				background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.6)), url(images/hero-1.jpg) center center/ cover;
+			} 
+		}
+	@media (max-width:  768px) { 
+		.hero { 
+			background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.6)), url(images/hero-2.jpg) center center / cover; 
+			} 
+		}
+
+	a:hover{
+		background-color: hsl(141, 53%, 31%) !important;
+	}
+	
+	/* responsive */
+	@media (max-width: 768px) {
+		:root {
+			font-size: 75%;
+		}
+	}
+</style>
+</head>
+<body >
+	<section class="hero is-fullheight">
+		<!-- nav -->
+		<nav class="hero-head">
+		<div class="columns is-mobile is-marginless heading has-text-weight-bold">
+			<div class="column left">
+				<p class="navbar-item has-text-white black">HOME</p>
+			</div>
+			<div class="column right">
+				<a href="#ABOUT" class="navbar-item has-text-white desktop" >ABOUT </a>
+				<a class="navbar-item has-text-white desktop" href="#CONTACT">CONTACT</a>
+				<div class="is-hidden-desktop">
+					<figure class="navbar-item image ">
+						<i class="fas fa-3x fa-bars has-text-white "
+							style="width: 1rem; height: 1rem;">
+							</i>
+					</figure>
+				</div>
+			</div>
+			
+		</div>
+	</nav>
+	<!-- end of nav -->
+
+	<header class="hero-body">
+		<!-- home page-->
+		<div class="is-overlay has-text-right" style="top: 150px;">
+			<h1 class="title is-1 has-text-weight-light has-text-white double-spaced">Looking for Software Developer?</h1>
+			<p class="subtitle is-5 has-text-white has-text">I am software developer from India, currently living in Adelaide, South Australia.<br>
+			If you are a business owner or an employeer looking to hire, you can get in touch with me here.</p>
+			<p style="padding-right: 20px;">
+			<a class="button is-warning is-inverted  is-outlined has-text-weight-bold has-text-white"
+				style="width: 20%; border: 0.1em solid white; padding-right: 1px;" href="#ABOUT">
+				View Portfolio
+			</a>
+		</p>
+			</div>	
+		
+		<!-- about -->
+	</header>
+	
+</section>
+
 </body>
 </html>
